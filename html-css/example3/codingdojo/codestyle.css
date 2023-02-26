@@ -1,0 +1,43 @@
+div.headhod {
+  background-color: black;
+  height: 80px;
+  line-height: 60px;
+  font-size: 38px;
+  font-family: cursive;
+}
+h1 {
+  color: rgb(42, 140, 165);
+}
+h1 span {
+  color: rgb(238, 241, 239);
+}
+div.headgo {
+  background-color: blueviolet;
+  margin-bottom: 10px;
+}
+
+h2 {
+  height: 15px;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  padding: 22px;
+  margin-top: 11px;
+}
+div.headbot {
+  background-color: lightskyblue;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+h3 {
+  color: rgb(61, 2, 117);
+  text-align: end;
+  text-decoration: underline;
+  font-family: cursive;
+  font-size: 23px;
+  padding-top: 0px;
+  margin-top: -12px;
+  margin: 3px;
+  padding: 15px;
+}

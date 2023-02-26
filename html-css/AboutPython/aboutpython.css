@@ -1,0 +1,195 @@
+* {
+  /* background-color: #245076; */
+  margin: 0px;
+  padding: 0px;
+}
+.ppage {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #245076, #306ca0);
+}
+.pythonpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  /* height: 150px; */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #245076; */
+}
+.textbar {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.text1 {
+  color: white;
+  text-align: end;
+}
+.normal {
+  color: yellow;
+  text-decoration: underline;
+  font-family: cursive;
+  font-size: small;
+  text-align: end;
+}
+.screen {
+  background: white;
+  height: 50px;
+  text-align: center;
+  color: gray;
+}
+.gobutton {
+  width: 60px;
+  height: 50px;
+  background-color: #245076;
+  color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 2px black;
+}
+.text2 {
+  border: 17px solid rgb(51, 50, 50);
+  box-shadow: 0 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(51, 50, 50);
+}
+.aboutbar {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #245076; */
+}
+.itself {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+
+  border-radius: 6px;
+  width: 100%;
+}
+.btw {
+  display: flex;
+  width: 970px;
+  height: 65px;
+  color: white;
+  font-family: cursive;
+  background-color: #407bad;
+  border: 1px solid black;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  box-shadow: 0 5px 5px black;
+}
+.first {
+  /* background-color: #245076; */
+  display: flex;
+}
+.main {
+  width: 100%;
+  /* background-color: #245076; */
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 970px;
+  align-items: center;
+}
+.cal1 li::before {
+  content: ">>";
+  color: yellow;
+  text-decoration: none;
+  margin-left: 3px;
+}
+.cal1 {
+  list-style-type: none;
+}
+.cal1 {
+  margin-left: 70px;
+  margin-bottom: 97px;
+  letter-spacing: 2px;
+}
+
+.cal2 {
+  /* background-color: #245076; */
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: medium;
+}
+
+.calll {
+  /* list-style-image: url("j.png"); */
+  /* background-color: #245076; */
+  color: rgb(250, 250, 245);
+  background-size: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+h1 {
+  color: rgb(157, 157, 59);
+}
+h2 {
+  color: white;
+}
+.whitearea {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+}
+.whitecal1 {
+  text-align: center;
+  border-top: 4px solid rgb(41, 138, 235);
+  order: 2;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.web {
+  color: #407bad;
+}
+.gego {
+  color: #407bad;
+}
+.whitecal2 {
+  text-align: center;
+  border-top: 4px solid rgb(41, 138, 235);
+  order: 1;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  background-color: #306b9e;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 970px;
+  height: 100px;
+}
+.nine {
+  font-size: 20px;
+  color: #73a6d4;
+  text-align: center;
+}
+.finish {
+  color: #73a6d4;
+}
+.blue {
+  color: rgb(41, 138, 235);
+}

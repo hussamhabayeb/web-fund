@@ -1,0 +1,88 @@
+.row {
+  background-color: rgb(194, 235, 235);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+}
+.col {
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 1;
+}
+.col-2 {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 1;
+}
+.col-3 {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  box-sizing: border-box;
+  flex: 1;
+  margin: 15px;
+}
+.col-4 {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 1;
+}
+
+.col-1a {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 1;
+}
+.col-2a {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 2;
+}
+.col-2b {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 2;
+}
+.col-3a {
+  background-color: aquamarine;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(6, 160, 109);
+  font-size: 22px;
+  color: white;
+  margin: 15px;
+  flex: 3;
+}

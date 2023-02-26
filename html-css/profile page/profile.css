@@ -1,0 +1,227 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  font-size: 1em;
+  font-family: cursive;
+  align-items: center;
+  height: 75px;
+}
+h1 {
+  margin-left: 10px;
+}
+a {
+  color: white;
+  font-size: 1rem;
+  /* padding: 10px; */
+  text-decoration: none;
+  /* margin-left: 50px; */
+}
+button {
+  width: 75px;
+  background-color: rgb(109, 245, 245);
+  font-family: cursive;
+}
+.go {
+  /* margin: 3px; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: space-around;
+}
+.usercard {
+  border: 2px solid #cccc;
+}
+.uno {
+  width: 500px;
+  height: 100px;
+  background-color: aqua;
+  display: inline-flex;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11px;
+  margin-bottom: 5px;
+}
+
+.img1 {
+  position: relative;
+  left: 46px;
+  top: -51px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(124, 122, 122);
+  border-radius: 50%;
+  margin-bottom: -55px;
+}
+
+.p1 {
+  font-size: 2rem;
+  font-family: cursive;
+  /* margin-top: 150px;
+  margin-left: 50px; */
+}
+.map1 {
+  width: 12px;
+  align-self: center;
+  /* margin-left: 10px;
+  margin-top: 10px; */
+  margin: 0 2px;
+}
+.p2 {
+  display: flex;
+  /* margin-bottom: 10px;
+  margin-left: 10px; */
+  font-size: 16px;
+}
+.gear {
+  width: 12px;
+  height: 12px;
+  color: black;
+}
+.jear {
+  color: blue;
+  text-decoration: underline;
+  margin-left: -10px;
+}
+aside {
+  border: 2px solid grey;
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  align-items: left;
+  flex-direction: column;
+}
+.edu {
+  width: 500px;
+  background-color: rgb(73, 73, 79);
+  color: white;
+  text-align: left;
+  font-family: cursive;
+}
+.pr {
+  text-align: left;
+  font-family: cursive;
+  color: black;
+}
+.p3 {
+  text-align: left;
+  color: grey;
+  font-family: cursive;
+}
+.root {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  margin: 0 auto;
+  border: 2px solid gray;
+  flex-direction: column;
+}
+.do {
+  width: 30px;
+  display: inline-flex;
+  border-radius: 50%;
+}
+.pull {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(102, 100, 100);
+}
+
+.root2 {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin-top: 25px;
+  margin-left: -1px; */
+}
+.fuls {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  align-items: center;
+}
+.you {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px;
+}
+.meen {
+  display: inline-flex;
+  flex-direction: row;
+}
+.tod {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.p5 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.hus {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+.dif {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.your {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(102, 100, 100);
+}
+.door {
+  width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  justify-content: space-between;
+}
+
+.cal2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  justify-content: space-evenly;
+  margin-top: -42px;
+  /* margin-right: 105px; */
+}
+.me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.alink {
+  color: blue;
+  text-decoration: underline;
+}
+.last {
+  display: flex;
+  border-top: 1px solid gray;
+  justify-content: flex-start;
+}

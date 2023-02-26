@@ -1,0 +1,19 @@
+* {
+  outline: 8px solid red;
+}
+
+body {
+  background-color: darkred;
+  color: firebrick;
+}
+
+h1 {
+  background-color: brown;
+  color: darkslategray;
+}
+.green {
+  background-color: green;
+}
+#red {
+  background-color: red;
+}

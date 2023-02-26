@@ -1,0 +1,55 @@
+.nav {
+  background-color: rgb(83, 79, 79);
+  height: 100px;
+  border: 1px solid rgb(176, 150, 150);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  color: white;
+  width: 45%;
+  font-family: cursive;
+  display: flex;
+  padding: 10px;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline;
+}
+
+.actve1 {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+  margin: 10px;
+}
+.active {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.active2 {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+  padding: 3px;
+  margin: 10px;
+}
+
+.btn {
+  background-color: aqua;
+  color: white;
+  font-family: cursive;
+  box-shadow: 5px 5px black;
+}
