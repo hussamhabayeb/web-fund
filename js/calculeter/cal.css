@@ -1,0 +1,36 @@
+#calculator {
+  margin: 0px 500px;
+  background-color: #222;
+  width: 110px;
+}
+#display {
+  width: 90%;
+  text-align: end;
+  color: rgba(241, 241, 241, 0.926);
+  font-size: 1rem;
+}
+button {
+  background-color: #666;
+  color: white;
+  border-radius: 5%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+
+}
+.row {
+  align-items: center;*
+  text-align: center;
+}
+.operator {
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  background-color: darkorange;
+}
+#equals {
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  width: 110px;
+}

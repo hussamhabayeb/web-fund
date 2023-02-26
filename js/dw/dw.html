@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="dw.css" />
+    <script defer src="dw.js"></script>
+  </head>
+  <body>
+    <div class="all">
+      <div class="mainpage">
+        <div class="page">
+          <h1>Dojo weather</h1>
+          <div class="cities">
+            <p  onclick="alr(this)" class="cityname">Burbank</p>
+            <p  onclick="alr(this)" class="cityname">Chicago</p>
+            <p  onclick="alr(this)" class="cityname">Dallas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Fpage">
+      <h2>San Jose</h2>
+      <div>
+        <label class="deg">show temperature in</label>
+        <select onchange="chg(this)"  name="temperature" id="trt">
+          <option value="celcius">&#8451</option>
+          <option  value="farenheit">&#8457</option>
+          
+        </select>
+      </div>
+    </div>
+    <div class="maindays">
+    <div class="days">
+      <h3>Today</h3>
+      <img src="some rain.png"alt=somerain class="img">
+      <p class="pdays">some rain</p>
+      <div class="ddays">
+        <p>&deg;<span class="p1 p3">24</span> </p>
+        <p>&deg;<span class="p1 p2">18</span></p>
+      </div>
+    </div>
+    <div class="days">
+      <h3>Today</h3>
+      <img src="sun.png"alt=somerain class="img">
+      <p class="pdays">some sun</p>
+      <div class="ddays">
+        <p>&deg;<span class="p1 p3">21</span> </p>
+        <p>&deg;<span class="p1 p2">16</span></p>
+      </div>
+    </div>
+    <div class="days">
+      <h3>Today</h3>
+      <img src="cloud-i.png"alt=somerain class="img">
+      <p class="pdays">some clouds</p>
+      <div class="ddays">
+        <p>&deg;<span class="p1 p3">23</span> </p>
+        <p>&deg;<span class="p1 p2">16</span></p>
+      </div>
+    </div>
+    <div class="days">
+      <h3>Today</h3>
+      <img src="sun.png"alt=somerain class="img">
+      <p class="pdays">some sun</p>
+      <div class="ddays">
+        <p>&deg;<span class="p1 p3">27</span> </p>
+        <p>&deg;<span class="p1 p2">21</span></p>
+      </div>
+    </div>
+    </div>
+      <div class="cookies" id="cooki">
+        <div class="bb">
+          <img src="ck.png"alt="cokies" class="img2"></div>
+        <div class="aa">
+          <h3>Stop ! Cookie time</h3>
+          <p>We use cookies (sadly not the edible ones) to personalize<br> content and ads,
+             to provide social media features and to<br> analyse
+              our traffic.
+              <span class="blu">Read more ...</span>
+             </p>
+        </div>
+        <div class="cc">
+          <button onclick="del('#cooki')" class="buttonB">I Accept</button>
+        </div>
+      </div>
+  </body>
+</html>
