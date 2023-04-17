@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red15\green15\blue15;\red224\green213\blue97;
+\red157\green101\blue255;\red244\green0\blue95;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c7059\c7059\c7059;\cssrgb\c90196\c85882\c45490;
+\cssrgb\c68235\c50588\c100000;\cssrgb\c97647\c14902\c44706;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 INSERT INTO authors (name)\
+VALUES (\cf4 \strokec4 "Jane Austin"\cf2 \strokec2 ),(\cf4 \strokec4 "Emily Dickinson"\cf2 \strokec2 ),(\cf4 \strokec4 "FYodor Dostoevsky"\cf2 \strokec2 ),(\cf4 \strokec4 "William Shakespeare"\cf2 \strokec2 ),(\cf4 \strokec4 "Lau Tzu"\cf2 \strokec2 );\
+\
+INSERT INTO books (title, num_of_pages)\
+VALUES (\cf4 \strokec4 "C Sharp"\cf2 \strokec2 ,\cf5 \strokec5 200\cf2 \strokec2 ),(\cf4 \strokec4 "Java"\cf2 \strokec2 ,\cf5 \strokec5 200\cf2 \strokec2 ),(\cf4 \strokec4 "Python"\cf2 \strokec2 ,\cf5 \strokec5 200\cf2 \strokec2 ),(\cf4 \strokec4 "PHP"\cf2 \strokec2 ,\cf5 \strokec5 200\cf2 \strokec2 ),(\cf4 \strokec4 "Ruby"\cf2 \strokec2 ,\cf5 \strokec5 200\cf2 \strokec2 );\
+\
+Update books SET title \cf6 \strokec6 =\cf2 \strokec2  \cf4 \strokec4 "C#"\cf2 \strokec2  \
+WHERE title \cf6 \strokec6 =\cf2 \strokec2  \cf4 \strokec4 "C Sharp"\cf2 \strokec2 ;\
+\
+UPDATE authors SET name \cf6 \strokec6 =\cf2 \strokec2  \cf4 \strokec4 "Bill Shakespeare"\cf2 \strokec2 \
+WHERE id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 4\cf2 \strokec2 ;\
+\
+INSERT INTO favorites (author_id,book_id)\
+VALUES (\cf5 \strokec5 1\cf2 \strokec2 ,\cf5 \strokec5 1\cf2 \strokec2 ),(\cf5 \strokec5 1\cf2 \strokec2 ,\cf5 \strokec5 2\cf2 \strokec2 ),(\cf5 \strokec5 2\cf2 \strokec2 ,\cf5 \strokec5 1\cf2 \strokec2 ),(\cf5 \strokec5 2\cf2 \strokec2 ,\cf5 \strokec5 2\cf2 \strokec2 ),(\cf5 \strokec5 2\cf2 \strokec2 ,\cf5 \strokec5 3\cf2 \strokec2 ),(\cf5 \strokec5 3\cf2 \strokec2 ,\cf5 \strokec5 1\cf2 \strokec2 ),(\cf5 \strokec5 3\cf2 \strokec2 ,\cf5 \strokec5 2\cf2 \strokec2 ),(\cf5 \strokec5 3\cf2 \strokec2 ,\cf5 \strokec5 3\cf2 \strokec2 ),(\cf5 \strokec5 3\cf2 \strokec2 ,\cf5 \strokec5 4\cf2 \strokec2 ),(\cf5 \strokec5 4\cf2 \strokec2 ,\cf5 \strokec5 1\cf2 \strokec2 ),(\cf5 \strokec5 4\cf2 \strokec2 ,\cf5 \strokec5 2\cf2 \strokec2 ),(\cf5 \strokec5 4\cf2 \strokec2 ,\cf5 \strokec5 3\cf2 \strokec2 ),(\cf5 \strokec5 4\cf2 \strokec2 ,\cf5 \strokec5 4\cf2 \strokec2 ),(\cf5 \strokec5 4\cf2 \strokec2 ,\cf5 \strokec5 5\cf2 \strokec2 );\
+\
+SELECT \cf6 \strokec6 *\cf2 \strokec2  FROM books \
+JOIN favorites on books.id \cf6 \strokec6 =\cf2 \strokec2  favorites.book_id\
+JOIN authors on authors.id \cf6 \strokec6 =\cf2 \strokec2  favorites.author_id\
+WHERE books.id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 3\cf2 \strokec2 ;\
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \strokec6 DELETE\cf2 \strokec2  FROM favorites\
+WHERE book_id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 3\cf2 \strokec2 \
+\cf6 \strokec6 AND\cf2 \strokec2  author_id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 2\cf2 \strokec2 ;\
+\
+SELECT author_id from favorites WHERE book_id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 3\cf2 \strokec2  ORDER BY author_id LIMIT \cf5 \strokec5 1\cf2 \strokec2 ;\
+\
+INSERT INTO favorites (author_id,book_id)\
+VALUES (\cf5 \strokec5 5\cf2 \strokec2 ,\cf5 \strokec5 2\cf2 \strokec2 );\
+\
+SELECT \cf6 \strokec6 *\cf2 \strokec2  FROM authors\
+JOIN favorites ON authors.id \cf6 \strokec6 =\cf2 \strokec2  favorites.author_id\
+JOIN books ON books.id \cf6 \strokec6 =\cf2 \strokec2  favorites.book_id\
+WHERE authors.id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 3\cf2 \strokec2 ;\
+\
+SELECT \cf6 \strokec6 *\cf2 \strokec2  FROM books\
+JOIN favorites ON books.id \cf6 \strokec6 =\cf2 \strokec2  favorites.book_id\
+JOIN authors ON authors.id \cf6 \strokec6 =\cf2 \strokec2  favorites.author_id\
+WHERE books.id \cf6 \strokec6 =\cf2 \strokec2  \cf5 \strokec5 5\cf2 \strokec2 ;\
+}

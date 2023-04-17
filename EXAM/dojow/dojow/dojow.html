@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dojow.css" />
+    <title>dojow</title>
+  </head>
+  <body>
+    <div class="mainpage">
+      <div class="mid-main">
+        <div class="dojow-menu">
+          <div class="dojow-left">
+            <h1>DojoWeather</h1>
+          </div>
+          <div class="dojow-right">
+            <a onclick="display(this)" href="#"> burbank</a>
+            <a onclick="display(this)" href="#">Chicago</a>
+            <a onclick="display(this)" href="#">Dallas</a>
+          </div>
+        </div>
+      </div>
+      <div class="city">
+        <div class="city-name">
+          <h2>San Jose</h2>
+        </div>
+        <div class="city-temp">
+          <label class="text-label">show temperature in</label>
+          <select onchange="temp(this)" class="select-temp">
+            <option value="Celsius"><span>&#176; C</span></option>
+            <option value="Fahrenheit"><span>&#176; F</span></option>
+          </select>
+        </div>
+      </div>
+      <div class="the-days-temp">
+        <div class="city-today">
+          <h3>Today</h3>
+          <img src="some rain.png" />
+          <p>some rain</p>
+          <div class="num">
+            <p class="p-1">30</p>
+            <span>&#176;</span>
+            <p class="p-1">18</p>
+            <span>&#176;</span>
+          </div>
+        </div>
+        <div class="city-today">
+          <h3>Today</h3>
+          <img src="sun.png" />
+          <p>some sun</p>
+          <div class="num">
+            <p class="p-1">28</p>
+            <p class="p-1">11</p>
+          </div>
+        </div>
+        <div class="city-today">
+          <h3>Today</h3>
+          <img src="cloud-i.png" />
+          <p>some clouds</p>
+          <div class="num">
+            <p class="p-1">24</p>
+            <p class="p-1">11</p>
+          </div>
+        </div>
+        <div class="city-today">
+          <h3>Today</h3>
+          <img src="sun.png" />
+          <p>some sun</p>
+          <div class="num">
+            <p class="p-1">26</p>
+            <p class="p-1">20</p>
+          </div>
+        </div>
+      </div>
+      <div class="cookies">
+        <div class="cookies-right">
+          <button onclick="deletee()" class="Accept-Button">I Accept</button>
+        </div>
+        <div class="cookies-left">
+          <img src="cookies.png" />
+          <p>
+            We use cookies (sadly not the edible ones) to personalize<br />
+            content and ads, to provide social media features and to<br />
+            analyse our traffic. <span class="blu">Read more ...</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="dojow.js"></script>
+  </body>
+</html>

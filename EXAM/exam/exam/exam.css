@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.the-page {
+  width: 70%;
+  margin: 0 auto;
+}
+.tob-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-search {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-menu {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid black;
+}
+.group1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.group2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.group3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin-left: 10px;
+}
+.cart-dark {
+  width: 20px;
+  height: 20px;
+}
+.leaf {
+  width: 30px;
+  height: 30px;
+  background-color: #00beb4;
+}
+.searchtab {
+  width: 555px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-family: cursive;
+}
+.mid-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section1 {
+  margin-left: 210px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+h1 {
+  font-size: 23px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 85px;
+}
+.part-1 {
+  display: flex;
+  /* height: 100%; */
+}
+.part-1a {
+  background-color: #00bbb4;
+  width: 220px;
+  height: 211px;
+}
+.Discorver {
+  margin-top: 48px;
+  color: white;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+.arrow {
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.succulents-1 {
+  width: 80%;
+  height: 80%;
+}
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.part-2a {
+  display: flex;
+  width: 140px;
+  height: 140px;
+}
+.aloe {
+  width: 190px;
+  height: 140px;
+}
+
+.part-2b {
+  display: flex;
+  background-color: #00bbb4;
+  width: 140px;
+  height: 50px;
+  margin-top: 10px;
+}
+.aloe-p {
+  color: white;
+}
+.section3 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #aeeae9;
+  height: 220px;
+  margin-left: 70px;
+}
+.flowers-part {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.flower {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.cookies {
+  position: absolute;
+  bottom: 300 px;
+  left: 250px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid black;
+  background-color: white;
+}
+.cookies-right {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+.cookies-left {
+  display: flex;
+  justify-content: space-between;
+  order: 1;
+  align-items: center;
+}
+.alert-dark {
+  width: 100px;
+  height: 100px;
+}
+.Accept-Button {
+  margin-right: 10px;
+  box-shadow: 2px 2px black;
+  background: #00bcb5;
+  width: 60px;
+}
+.blu {
+  color: blue;
+  text-decoration: underline;
+}
+.flower-name {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}

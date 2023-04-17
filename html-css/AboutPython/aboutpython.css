@@ -4,7 +4,7 @@
   padding: 0px;
 }
 .ppage {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to bottom, #245076, #306ca0);
@@ -192,4 +192,8 @@ h2 {
 }
 .blue {
   color: rgb(41, 138, 235);
+}
+.bot {
+  display: flex;
+  flex-direction: column;
 }

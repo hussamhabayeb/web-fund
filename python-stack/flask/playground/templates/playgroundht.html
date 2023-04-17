@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            margin:300px 300px;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            wi
+        }
+        .empty{
+            width:300px;
+            height: 300px;
+            background-color: rgb(92, 92, 247);
+            border: 2px solid black;
+            margin: 10px;
+
+        }
+        .txt{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .space{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+                            <div class="txt">
+                                        <h1>wellcome !</h1>
+                            </div>
+ <div class="space">
+    {% for empty in range (num) %}
+      <div class="empty" style="background-color: {{same_color}}"></div>
+      {% endfor %}
+    
+</div>
+
+</div>
+</body>
+</html>

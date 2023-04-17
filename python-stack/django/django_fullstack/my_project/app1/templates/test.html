@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        width: 100%;
+      }
+      .top-bar {
+        margin-top: 10px;
+        display: flex;
+        justify-content:end;
+        margin-right: 10px;
+        margin: 10px;
+        
+      }
+      
+</style>
+
+<body>
+    <div class="main">
+        <div class="top-bar">
+          <a href="/paintings">Dachbord</a>
+          <button><a href="/logout">Log out</a></button>
+          <button><a href="/paintings/new">add paint</a></button>
+        </div>
+        <hr>
+        <h1>Edit a Painting</h1>
+        <div class="show-table">
+            <form action="/addpaint" method="POST">
+                {% csrf_token %}
+              <p>title</p><input type="text" name="title" value="" />
+              <p>Description </p><textarea name="desc" cols="30" rows="10"></textarea>
+              <div><p>Price</p><input type="text" name="price" /></div>
+              <br>
+              <input type="submit" value="Add" />
+            </form>
+            {% if messages %}
+            <ul class="messages">    
+             {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+             {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+      </div>
+</body>
+</html>

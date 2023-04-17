@@ -24,3 +24,7 @@ function chg(j) {
   }
   console.log(j.value);
 }
+function test() {
+  var n = document.querySelector("#cooki");
+  n.remove();
+}

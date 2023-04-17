@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> name: {{at.first_name}}  {{at.last_name}}</h1> 
+  <h3>id :{{at.id}}</h3> 
+  <h3>note: {{at.note}}</h3>
+  <hr>
+  <h3>books:</h3>
+
+
+  <ul>
+    
+ 
+  {% for book in auther.books.all %}
+ <li> {{book.title}}</li>
+  {% endfor %}
+
+</ul>
+
+
+  <form action="/addauth/{{auther.id}}" method="POST" >
+           {% csrf_token %} 
+
+
+    <select name="bookauthors">
+    {% for book in books %}
+
+    {% if book not in  auther.books.all   %}
+    <option value="{{book.id}}"> {{book.title}} </option>
+    {% endif %}
+    {% endfor%}
+    </select>
+        
+            
+        <input type="submit" value="add">
+        </form>
+
+
+       
+</body>
+</html>

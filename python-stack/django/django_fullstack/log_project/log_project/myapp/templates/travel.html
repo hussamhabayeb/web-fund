@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: end;margin-right: 5%;">
+        <a href="/destroy">Log Out</a>
+    </div>
+
+    <div>
+        <h1>Hello {{request.session.fname}}!</h1>
+    </div>
+    <div>
+        <h2>Your Trip Schedules</h2>
+        <table border="1px">
+            <th>
+            <td>Destination</td>
+            <td>Travel Start Date</td>
+            <td>Travel End Date
+            </td>
+            <td>Plan</td>
+            </th>
+            {%for user in user.travels.all %}
+            <tr>
+                <td>{{user.destination}}</td>
+                <td>{{user.start_date}}</td>
+                <td>{{user.end_date}}</td>
+                <td>{{user.plan}}</td>
+
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+    <div>
+        <h2>Other User's Travel Plans</h2>
+    <table border="1px">
+        <th>
+            <td>Name</td>
+            <td>Destination</td>
+            <td>Travel Start Date</td>
+            <td>Travel End Date
+            </td>
+            <td>Plan</td>
+        </th>
+        {%for user in Travel.trip%}
+
+        <tr>
+            <td>{{user.fname}} {{user.lname}}</td>
+            <td>{{user.destination}}</td>
+            <td>{{user.start_date}}</td>
+            <td>{{user.end_date}}</td>
+            <td>{{user.plan}}</td>
+
+        </tr>
+        {%endfor%}
+    </table>
+    </div>
+    <div style="text-align: end;margin-right: 5%;">
+        <a href="/travels/add/{{u}}" >Add Travel Plan</a>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,7 +1,4 @@
-function mylike(k) {
-  var x = document.querySelector(k).innerText;
-  x++;
-  document.querySelector(k).innerText = x;
+var oio = document.querySelector(".james")
+function mylike(){
+oio
 }
-
-var x = document.querySelector(k).innerText;

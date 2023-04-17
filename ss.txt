@@ -1,0 +1,17 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "One Monokai",
+  "git.suggestSmartCommit": false,
+  "workbench.editor.enablePreview": false,
+  "html.autoCreateQuotes": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "extensions.supportUntrustedWorkspaces": {},
+  "remote.downloadExtensionsLocally": true,
+  "editor.experimental.pasteActions.enabled": true,
+  "editor.linkedEditing": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "always"
+}

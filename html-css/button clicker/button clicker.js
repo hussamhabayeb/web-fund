@@ -8,6 +8,6 @@ function hide(element) {
   element.remove();
 }
 
-function alert(ninja was liked) {
-  console.log(ninja was liked);
+function alerting() {
+  alert("ninja was killed");
 }

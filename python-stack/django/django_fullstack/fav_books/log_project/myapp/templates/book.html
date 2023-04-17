@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .all{
+    width: 100%;
+    margin: 250px auto;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+  }
+  .top{
+    display: flex;
+  }
+</style>
+  <body>
+    <div class="al">
+    <div class="top">
+      <h1>wellcome ,{{userid.fname}}</h1>
+      <a href="/destroy">Log out</a>
+    </div>
+    <hr />
+    <div class="main">
+        <div class="part-1">
+            <form action="/add" method="POST">
+              {% csrf_token %}
+            <p>title<input type="text" name="title" /></p>
+            <p>Description <textarea name="desc" cols="30" rows="10"></textarea></p>
+            <input type="submit" value="Add" />
+          </form>
+
+        </div>
+        <div class="part-2">
+            <h1>All Book</h1>
+
+            {%for book in allbooks  %}
+            <div>
+              
+              <a href="/books/{{book.id}}"><li>{{book.title}}</li></a>
+              <p>add by{{book.up_loaded_by.fname}}{{book.up_loaded_by.lname}}</p>
+              {% if userid not in book.users_who_like.all %}
+             
+              <p><a href="/books/{{book.id}}/favorite">add to favorite</a></p>
+              {% else %}
+              <p>this one of your favraite</p>
+
+              {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+   </div>
+  </body>
+</html>

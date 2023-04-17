@@ -1,0 +1,146 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8mb3 ;
+USE `mydb` ;
+
+-- -----------------------------------------------------
+-- Table `mydb`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NOT NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `created_at` DATETIME NOT NULL,
+  `updated_at` DATETIME NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 35
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+------------------------------------------------------------------------------------------------------------------------------------
+1)
+select* from dojos ;
+insert into dojos (name,created_at,updated_at) values ('ahamd',now(),now());
+insert into dojos (name,created_at,updated_at) values ('ali',now(),now());
+insert into dojos (name,created_at,updated_at) values ('hamza',now(),now());
+                                   ------------------------------------------------------
+2)
+select *from dojos ;
+delete from dojos where id=1 ;
+delete from dojos where id=2 ;
+delete from dojos where id=3 ;
+                                     ------------------------------------------------------
+3)
+select * from dojos ;
+insert into dojos (name,created_at,updated_at) values ('hussam',now(),now());
+insert into dojos (name,created_at,updated_at) values ('mohammd',now(),now());
+insert into dojos (name,created_at,updated_at) values ('khaled',now(),now());
+                                         -------------------------------------------------
+4,5,6)
+
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("khaled"),("habaa"),23,1,now(),now())
+																	       ,(("rgdfgdf"),("asdas"),23, 1,now(),now())
+                                                                          ,(("asdasd"),("asdas"),23, 1,now(),now());
+
+----------------------------------------------------------------------------------
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("khd"),("haa"),23,2,now(),now())
+																	       ,(("rewe"),("asfqq "),22, 2,now(),now())
+                                                                          ,(("atr"),("jook"),23, 2,now(),now());
+-------------------------------------------------------------------------------------------------------------------------
+
+select * from ningas where dojos_id =1 ; 
+----------------------------------------------------
+select * from ningas where dojos_id =3;
+---------------------------------------------------
+select dojos.name ,ningas.first_name,last_name 
+from dojos
+join ningas on ningas.dojos_id= dojos.id
+where ningas.dojos_id=3 ;
+----------------------------------------------
+insert into dojos (name) value ('hussam'),('ola'),('ali')
+
+select *from dojos LIMIT 0, 1000
+
+delete from dojos
+
+set sql_safe_updates=0
+
+delete from dojos
+
+select * from dojos LIMIT 0, 1000
+
+insert into dojos (name) value ('hussam'),('ola'),('ali')
+
+select * from dojos LIMIT 0, 1000
+
+insert into dojos (name) value ('hussam'),('ola'),('ali')
+
+insert into ningas (first_name,last_name,age,created_at,updated_at)values("khaled","habaa",23 ,now(),now()),                          ("musab","white",24 ,now(),now()),                                                                             ("sul","green",25 ,now(),now())
+
+insert into ningas (first_name,last_name,age,created_at,updated_at)values(("khaled"),("habaa"),23 ,now(),now()),                          (("musab"),("white"),24 ,now(),now()),                                                                             (("sul"),("green"),25 ,now(),now())
+
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("khaled"),("habaa"),23,1,now(),now())                         ,(("khaled"),("habaa"),23, 2,now(),now())                                                                           ,(("khaled"),("habaa"),23, 3,now(),now())
+
+SELECT * FROM ninga.dojos LIMIT 0, 1000
+
+delete from dojos
+
+insert into dojos (id,name,created_at,updated_at) values(1,"hussam",now(),now()),   (2,"shadid",now(),now()),         (3,"khalid",now(),now())
+
+SELECT * FROM ninga.dojos LIMIT 0, 1000
+
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("khaled"),("habaa"),23,1,now(),now())                         ,(("rgdfgdf"),("asdas"),23, 1,now(),now())                                                                           ,(("asdasd"),("asdas"),23, 1,now(),now())
+
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("khd"),("haa"),23,2,now(),now())                         ,(("rewe"),("asfqq "),22, 2,now(),now())                                                                           ,(("atr"),("jook"),23, 2,now(),now())
+
+SELECT * FROM ninga.dojos LIMIT 0, 1000
+
+SELECT * FROM ninga.dojos LIMIT 0, 1000
+
+SELECT * FROM ninga.ningas LIMIT 0, 1000
+
+insert into ningas (first_name,last_name,age,dojos_id,created_at,updated_at)values(("kshd"),("haaf"),20,3,now(),now())                         ,(("regwe"),("asffgqq "),21,3,now(),now())                                                                           ,(("gatr"),("jdook"),25, 3,now(),now())
+
+SELECT * FROM ninga.ningas LIMIT 0, 1000
+
+SELECT * FROM ninga.ningas LIMIT 0, 1000
+
+select * from ninjas where dojos_id =1 LIMIT 0, 1000
+
+select * from ningas where dojos_id =1 LIMIT 0, 1000
+
+select * from ningas where dojos_id =3 LIMIT 0, 1000
+
+select dojos.name ,ningas.first_name,last_name  from dojos join ningas on ningas.dojos_id= dojos.id where ningas.dojos_id=3 LIMIT 0, 1000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

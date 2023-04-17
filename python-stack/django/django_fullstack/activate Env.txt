@@ -1,0 +1,1 @@
+call "C:\Users\hhaba\OneDrive\Desktop\web-fundemntal\python-stack\my_envieroment\django\djangoPy3Env\Scripts\activate"

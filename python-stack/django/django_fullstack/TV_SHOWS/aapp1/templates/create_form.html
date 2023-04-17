@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="main">
+        <h1>Add a new Show</h1>
+        <form method="post" action="/addshow">
+            {% csrf_token %}
+            <p>title</p><br><input type="text" name="title">
+            <p>Network</p><br><input type="text" name="network">
+            <p>Releas date</p><br><input type="date" name="date">
+            <p>Description</p><textarea name="desc" cols="30" rows="10"></textarea>
+            <input type="submit" value="create">
+        </form>
+</div>
+</body>
+</html>

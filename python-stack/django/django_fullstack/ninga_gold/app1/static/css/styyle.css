@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+    width: 80%;
+    margin: 0  auto;
+}
+.colection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.farm{
+    display: flex;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+form{
+   
+    width: 100%;
+  
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.area{
+    border: 2px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><a href="/travels">Home</a><span>|</span><a href="/destroy">Log Out</a></div>
+    <form action="/addtrip" method="POST">
+        {% csrf_token%}
+       <p>destination<input type="text" name="des" ></p>
+       <p>description<input type="text" name="desc" ></p> 
+       <p>travel date from <input type="date" name="start_date" > </p>
+       <p>travel date to <input type="date" name="end_date" > </p>
+        <input type="submit" value="add">
+       
+       
+
+    </form>
+</body>
+</html>
