@@ -8,10 +8,12 @@ public class Order{
 
     public Order(){
         this.name="Guest";
-        ArrayList<Item> items =new ArrayList <Item>();
+        this.items =new ArrayList <Item>();
     }
     public Order(String name){
         this.name=name;
+        this.items =new ArrayList <Item>();
+
     }
 
 
@@ -34,9 +36,8 @@ public class Order{
     }
 
         
-    public void additem(Item item){
-         this.items.add(item);
-
+    public void addItem(Item item){
+        this.items.add(item);
     }
     public String getStatusMessage(){
         if (ready==true){   //  = (this.ready==true)
