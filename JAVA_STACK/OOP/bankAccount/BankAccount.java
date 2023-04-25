@@ -1,43 +1,44 @@
 public class BankAccount{
 
-    private double checking_balance ;
-    private double savings_balance ;
+    private double checking_Balance ;
+    private double savings_Balance ;
     static int numOfAccount=0 ;
     static double TotalMoney =0 ;
     
 
-    public BankAccount(double checking_balance , double savings_balance){
-        this.checking_balance=checking_balance;
-        this.savings_balance=savings_balance;
+    public BankAccount(double checking_balance , double savings_Balance){
+        this.checking_Balance=checking_balance;
+        this.savings_Balance=savings_Balance;
+        this.TotalMoney=checking_balance+savings_Balance ;
         numOfAccount++ ;
     }
 
     public double getChecking_balance() {
-        return checking_balance;
+        return  this.checking_Balance;
     }
    
     
     public double getSavings_balance() {
-        return savings_balance;
+        return this.savings_Balance;
     }
    
 
-    public void depositToSaving(double AmountOfMoney){
-        this.savings_balance+=AmountOfMoney;
+    public void depositToSaving(double AmountOfMoney ){
+        this.savings_Balance+=AmountOfMoney;
         TotalMoney +=AmountOfMoney;
-        System.out.println("your balance saving account : "+this.savings_balance);
+        System.out.println("your balance saving account : "+this.savings_Balance);
     }
     public void depositToChecking(double AmountOfMoney){
-        this.checking_balance+=AmountOfMoney;
+        this.checking_Balance+=AmountOfMoney;
         TotalMoney +=AmountOfMoney;
-        System.out.println("your balance cheacking account : "+this.checking_balance);
+        System.out.println("your balance cheacking account : "+this.checking_Balance);
     }
     public void withdraw (double AmountOfMoney){
 
-        if (savings_balance>AmountOfMoney){
-        this.savings_balance-=AmountOfMoney;
+        if (savings_Balance>AmountOfMoney){
+        this.savings_Balance-=AmountOfMoney;
         TotalMoney-=AmountOfMoney ;
-        System.out.println("your balance cheacking account : "+this.savings_balance);
+        System.out.println("your balance saving_balance account : "+this.savings_Balance);
         }
         else {
         System.out.println("oparetion failed");

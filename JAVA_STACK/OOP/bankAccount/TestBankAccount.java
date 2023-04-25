@@ -8,6 +8,7 @@ public class TestBankAccount {
        account1.depositToChecking(200);
        account1.depositToSaving(200);
        account1.withdraw(400);
-    
+         
+         System.out.println(account1.TotalMoney);
     }
 }
