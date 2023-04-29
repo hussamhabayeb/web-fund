@@ -5,6 +5,7 @@ public class Car{
 
 
 public int getGas() {
+    
     return gas;
 }
 
