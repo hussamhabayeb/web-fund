@@ -9,6 +9,12 @@
 </head>
 <body>
 
+  <h1>${book.title} </h1>
+ <h1>${book.description} </h1> 
+ <h1> ${book.language} </h1>
+ <h1> ${book.numberOfPages} </h1>
+  
+
 
 </body>
 </html>
