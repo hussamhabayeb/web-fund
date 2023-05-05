@@ -16,6 +16,7 @@
             <th>Title</th>
             <th>Language</th>
             <th>Number of Pages</th>
+
         </tr>
     </thead>
     <tbody>

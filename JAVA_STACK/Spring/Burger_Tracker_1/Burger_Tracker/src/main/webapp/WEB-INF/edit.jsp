@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Edit Book</h1>
-<form:form action="/burger/${burgers.id}" method="post" modelAttribute="burger">
+<form:form action="/burger/${burger.id}" method="post" modelAttribute="burger">
     <input type="hidden" name="_method" value="put">
     <p>
         <form:label path="name">Title</form:label>

@@ -45,21 +45,22 @@ public class BurgerController {
 	        }
 	        
 	    }
-	    @RequestMapping("{id}/edit")
+	    @RequestMapping("/edit/{id}")
 	    public String edit(@PathVariable("id") Long id, Model model) {
 	    	Burger burger = burgerService.findBurger(id);
 	        model.addAttribute("burger", burger);
 	        return "edit.jsp";
 	    }
 	    
-	    @RequestMapping(value="/burgers/{id}", method=RequestMethod.PUT)
-	    public String update(@Valid @ModelAttribute("burger") Burger burger, BindingResult result, Model model) {
+	    @RequestMapping(value="/burger/{id}", method=RequestMethod.PUT)
+	    public String update(@Valid @ModelAttribute("burger") Burger burger, BindingResult result, Model model ,
+	    		@PathVariable("id") Long id) {
 	        if (result.hasErrors()) {
-	            model.addAttribute("burgers", burger);
+	            model.addAttribute("burger", burger);
 	            return "edit.jsp";
 	        } else {
 	        	burgerService.updateBurger(burger);
-	            return "redirect:/";
+	            return "redirect:/" ;
 	        }
 	    }
 }

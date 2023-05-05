@@ -40,6 +40,7 @@
             <th>Name</th>
             <th>resturant</th>
             <th>rating</th>
+            <th>action</th>
         </tr>
     </thead>
     <tbody>
@@ -49,7 +50,7 @@
             <th>${b.name}</th>
             <th>${b.resturant}</th>
             <th>${b.rating}</th>
-             <th><a href="edit.jsp/${b.id }"></a></th>
+            <th><a href="edit/${b.id }">edit</a></th>
         </tr>
         
     </c:forEach>
