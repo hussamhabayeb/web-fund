@@ -15,11 +15,17 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 @Entity
-@Table(name="Expense")
+@Table(name="expenses")
 public class Expense {
 
 
-	    @Id
+	    public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+		@Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long id;
 	    
@@ -34,8 +40,12 @@ public class Expense {
 	    @NotNull
 	    @Max(1000)
 	    @Min(20)
-	    @Size(min = 2, max = 40)
+	    
 	    private double amount;
+	    
+	    @NotNull
+	    @Size(min = 5, max = 200)
+	    private String description;
 	    
 	
 	    
@@ -48,11 +58,11 @@ public class Expense {
 	    
 	    public Expense() {
 	    }
-	    public Expense(String name, String vendor, double amount) {
+	    public Expense(String name, String vendor, double amount, String description) {
 	        this.name = name;
 	        this.vendor = vendor;
 	        this.amount = amount;
-	        
+	        this.description=description;
 	    }
 	    
 	    public Long getId() {

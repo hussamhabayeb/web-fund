@@ -16,12 +16,25 @@ public class ExpensesServices {
 	        this.expensesRepository = expensesRepository;
 	    }
 	    
+	    
+	    
+	    
+	    
 	    public List<Expense> allExpenses() {
 	        return expensesRepository.findAll();
 	    }
+	    
+	    
+	    
+	    
 	    public Expense createExpenses(Expense E) {
 	        return expensesRepository.save(E);
 	    }
+	    
+	    
+	    
+	    
+	    
 	    public Expense findExpense(Long id) {
 	        Optional<Expense> optionalExpense = expensesRepository.findById(id);
 	        if(optionalExpense.isPresent()) {
@@ -30,6 +43,9 @@ public class ExpensesServices {
 	            return null;
 	        }
 	    }
+	    
+	    
+	    
 	    public void deleteById(Long id) {
 		     try {
 		    	 expensesRepository.deleteById(id);
@@ -39,6 +55,9 @@ public class ExpensesServices {
 		     }
 
 		 }
+	    
+	    
+	    
 		 public Expense updateExpense(Expense e) {
 			 return expensesRepository.save(e);
 		 }
