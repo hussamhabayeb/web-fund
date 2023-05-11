@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.project.Repository.ProjectRepository;
 import com.example.project.models.LoginUser;
@@ -217,6 +219,39 @@ public class AppController {
 		 
 			return "redirect:/";
 	 }
+	 @RequestMapping("/projects/delete/{id}")
+		public String deleteProject(@PathVariable("id") Long id, HttpSession session) {
+			
+			if(session.getAttribute("user_id") == null) {
+				return "redirect:/logout";
+			}
+			
+			Project project = projectService.findProject(id);
+			projectService.deleteProject(project);
+			
+			return "redirect:/dashbord";
+		}
+	 @RequestMapping("/dashboard/leave/{id}")
+		public String leaveTeam(@PathVariable("id") Long id, HttpSession session,Model model) {
+			
+			if(session.getAttribute("user_id") == null) {
+				return "redirect:/logout";
+			}
+			
+			Long userId = (Long) session.getAttribute("user_id");
+			
+			Project project = projectService.findProject(id);
+			User user = userServ.findUserById(userId);
+			
+			user.getProjects().remove(project);
+			userServ.updateUser(user);
+			
+			model.addAttribute("user", user);
+			model.addAttribute("unassignedProjects", projectService.getUnassignedProjects(user));
+			model.addAttribute("assignedProjects", projectService.getAssignedProjects(user));
+			
+			return "redirect:/dashbord";
+		}
+		}
 	 
-	 
-}
+

@@ -51,14 +51,7 @@ public class ProjectService  {
 		return projectRepo.findByUsersNotContains(user);
 	}
 	
-    public void deleteProject(Long id) {
-	     try {
-	    	 projectRepo.deleteById(id);
-	     }
-	     catch(IllegalArgumentException e) {
-	         System.out.println("Invalid Arguments");
-	     }
-    
-    
-}
+    public void deleteProject(Project project) {
+		projectRepo.delete(project);
+	}
 }

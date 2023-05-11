@@ -16,8 +16,13 @@
 <body>
 <h1>Project Details</h1>
 <h1>Project : ${project.title }</h1>
-<h1>Description${project.description }</h1>
+<h1>Description : ${project.description }</h1>
 <h1>dueDate : ${project.dueDate }</h1>
-<button><a href="/delete/${project.id }">delete project</a></button>
+
+<c:if test = "${project.lead.id==userId}">
+    <h2><a href="/projects/delete/${project.id}">Delete Project</a></h2>
+</c:if>
+
+
 </body>
 </html>
